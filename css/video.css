@@ -1,0 +1,129 @@
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.5fr 0.8fr 1.5fr 0.8fr ;
+    grid-template-areas:
+    "nav     nav     nav     nav     sidebar"
+    "video-1 video-1 video-2 video-2 sidebar"
+    "desc-1  butt-1  desc-2  butt-2  sidebar"
+    "video-3 video-3 video-4 video-4 sidebar"
+    "desc-3  butt-3  desc-4  butt-4  sidebar";
+    grid-gap:0.3rem;
+}
+nav{
+    background:#130f40 ;
+    grid-area: nav;
+}
+#sidebar{
+    background:url(../images/girl.jpg)  center/cover no-repeat ;
+    grid-area: sidebar;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+#video-1{
+    background:  #ffb142;
+    grid-area: video-1;
+}
+#video-2{
+    background: #130f40;
+    grid-area: video-2;
+}
+#video-3{
+    background: #130f40;
+    grid-area: video-3;
+}
+#video-4{
+    background:  #ffb142;
+    grid-area: video-4;
+}
+#desc-1{
+    background: #130f40;
+    grid-area: desc-1;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#desc-2{
+    background: #130f40;
+    grid-area: desc-2;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#desc-3{
+    background: #130f40;
+    grid-area: desc-3;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#desc-4{
+    background: #130f40;
+    grid-area: desc-4;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#butt-1{
+    background: #130f40;
+    grid-area: butt-1;
+}
+#butt-2{
+    background: #130f40;
+    grid-area: butt-2;
+}
+#butt-3{
+    background: #130f40;
+    grid-area: butt-3;
+}
+#butt-4{
+    background: #130f40;
+    grid-area: butt-4;
+}
+button{
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    position: relative;
+    border: none;
+    outline: none;
+    background-origin: 10px;
+    box-shadow: 0 3px 3px #aaa;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+button::after{
+    content: "";
+    position: absolute;
+    background-color: #2c2c54;
+    width: 30px;
+    margin-right: 155px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    transform: skew(-30deg);
+}
+button::before{
+    content: "download";
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    background-color: #ffb142;
+    width: 170px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+
+}
